@@ -1,0 +1,25 @@
+header h1 {
+    text-align: center;
+}
+
+.summary {
+    text-align: center;
+}
+
+a {
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.right {
+    float: right;
+    padding: 15px;
+}
+
+.left{
+    float: left;
+    padding: 10px;
+}
