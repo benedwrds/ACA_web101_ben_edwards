@@ -1,0 +1,111 @@
+@media (min-width: 576px) {
+
+    img {
+        width:99%;
+        text-align: center;
+    }
+
+    
+
+    .incubus {
+        width: 85%;
+
+    } 
+    
+    .benefits {
+        font-size: 20px;
+        padding-right:115px;
+    }
+   
+
+    .burleywood {
+        background-color: burlywood;
+        padding-right: 25%;
+        padding-bottom: 40%;
+        color: white;
+}
+
+.burleywood2 {
+        background-color: burlywood;
+        
+}
+
+   .links {
+       padding-left: 10px;
+   }
+
+    .Med {
+        background-color: lightsalmon;
+        padding: 5px;
+        color: white;
+}
+
+    .paragraph {
+        font-weight: bold;
+} 
+
+    .contact {
+        float:right;
+    
+}
+
+    .topStories {
+        display: none;
+ }
+
+}
+
+@media (min-width: 768px) {
+
+    .footer {
+        visibility: hidden;
+    }
+
+    .topStories {
+        display: none;
+    }
+
+    .topStories {
+        position: absolute;
+        text-align: left;
+        right: 35%;
+        top: 73%;
+        padding-left: 10px;
+    }
+    
+    .Med {
+        
+        top: 88%;
+    }
+}
+
+\\Fullscreen
+
+@media (min-width: 992px) {
+
+    .Med {
+        top: 80%;
+        margin: 5px;
+    }
+
+    .topStories {
+        float: right;
+        display: inline-block;
+        top: 25px;
+        right: 10px;
+    }
+    .topStoriesAnchor {
+        font-weight: bold;
+    }
+
+    img {
+        width: 58%;
+    }
+
+    .paragraph {
+        top: 65%;
+    }
+
+    }
+
+}
