@@ -1,0 +1,65 @@
+@media (min-width: 576px) {
+
+body{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+}
+
+.wrap {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 25px;
+    width: 120px;
+    background: lightgrey;    
+}
+
+.img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 0 10px;     
+}
+
+/* for "margin" 0 is top & bottom 10px is left & right */
+
+
+.greetings {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+}
+
+.calender {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.timeIs {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+input[type=button]{
+    text-align: center;
+}
+
+.toDo {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+}
+
+@media (min-width: 992px) {
+
+img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+      
+}
+.wrap {
+    position: absoulute;
+    height: 205px;
+}
+
+}

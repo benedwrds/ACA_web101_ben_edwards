@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 @media (min-width: 576px) {
 
     img {
@@ -5,13 +9,6 @@
         text-align: center;
     }
 
-    
-
-    .incubus {
-        width: 85%;
-
-    } 
-    
     .benefits {
         font-size: 20px;
         padding-right:115px;
@@ -20,29 +17,47 @@
 
     .burleywood {
         background-color: burlywood;
-        padding-right: 25%;
-        padding-bottom: 40%;
         color: white;
-        padding-left: 5px;
+        padding: 5px;
+        flex: auto;
+}
+.links {
+    border-bottom: 1px solid gray;
+    width: 90px;
+    margin: 5px;
+    text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.562);
+    padding: 5px;
 }
 
-.burleywood2 {
-        background-color: burlywood;
-        
+.links:hover {
+    text-shadow: 1px 1px 1px salmon;
+    cursor: pointer;
+}
+.burleywood-wrap {
+    display: flex;
+    width: 100%;
 }
 
-   .links {
+
+
+.links {
        padding-left: 10px;
    }
 
     .Med {
         background-color: lightsalmon;
+        width: 125px;
+        text-align: center;
+        text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.562);
         padding: 5px;
         color: white;
+
+        
 }
 
     .paragraph {
         font-weight: bold;
+        max-width: 650px;
 } 
 
     .contact {
@@ -50,37 +65,42 @@
     
 }
 
-    .topStories {
-        display: none;
- }
+.topStories {
+    position: absolute;
+    text-align: left;
+    right: 35%;
+    top: 73%;
+    padding-left: 10px;
+    width: 40%;
+}
 
+
+}
+//made my own media query so text is not distorted
+@media (min-width: 572px){
+
+    .topStories{
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
 
-    .footer {
-        visibility: hidden;
+    .burleywood-wrap {
+        display: none;
     }
 
     .topStories {
         display: none;
     }
 
-    .topStories {
-        position: absolute;
-        text-align: left;
-        right: 35%;
-        top: 73%;
-        padding-left: 10px;
-    }
-    
     .Med {
         
         top: 88%;
     }
 }
 
-\\Fullscreen
+/* \\Fullscreen */
 
 @media (min-width: 992px) {
 
@@ -106,7 +126,7 @@
     .paragraph {
         top: 65%;
     }
-
+    .burleywood-wrap {
+        display: none;
     }
-
 }

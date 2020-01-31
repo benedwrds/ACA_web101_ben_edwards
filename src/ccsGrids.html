@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="cssGrids.css">
+</head>
+<body>
+<div class ="wrap">
+<form name ="cal">
+    <input type ="text" name="display">
+    <br><br>
+    <input type ="button" value ="9" onclick ="cal.display.value+='9'">
+    <input type ="button" value ="8" onclick ="cal.display.value+='8'">
+    <input type ="button" value ="7" onclick ="cal.display.value+='7'">
+    <input type ="button" value ="+" onclick ="cal.display.value+='+'">
+    <br><br>
+    <input type ="button" value ="6" onclick ="cal.display.value+='6'">
+    <input type ="button" value ="5" onclick ="cal.display.value+='5'">
+    <input type ="button" value ="4" onclick ="cal.display.value+='4'"> 
+    <input type ="button" value ="-" onclick ="cal.display.value+='-'">
+    <br><br>
+    <input type ="button" value ="3" onclick ="cal.display.value+='3'">
+    <input type ="button" value ="2" onclick ="cal.display.value+='2'">
+    <input type ="button" value ="1" onclick ="cal.display.value+='1'">
+    <input type ="button" value ="*" onclick ="cal.display.value+='*'">
+    <br><br>
+    <input type ="button" value ="0" onclick ="cal.display.value+='0'">
+    <input type ="button" value ="/" onclick ="cal.display.value+='/'">
+    <input type ="button" value ="%" onclick ="cal.display.value+='%'">
+    <input type ="button" value ="=" onclick ="cal.display.value =eval(cal.display.value)">
+    <br><br>
+    <input type ="button" value ="DEL" onclick ="cal.display.value= ''" id= "del">
+</form>
+</div>
+
+<div class ="greetings">
+    <h1>Hello Marge,</h1>
+    <h3> Welcome to your Dashboard!</h3>
+</div>
+<div class= "img">
+    <img src="marge1.jpg">
+</div>
+
+<div class ="calender">
+
+
+</div>
+
+ <div class ="timeIs">  
+<a href="https://time.is/Austin" id="time_is_link" rel="nofollow" style="font-size:36px">Time in Austin:</a>
+<span id="Austin_z123" style="font-size:36px"></span>
+<script src="//widget.time.is/t.js"></script>
+<script>
+time_is_widget.init({Austin_z123:{time_format:"12hours:minutesAMPM"}});
+</script>
+</div>
+</body>
+</html>

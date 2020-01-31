@@ -1,0 +1,38 @@
+body{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+}
+
+.wrap {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-image:url(/marge1.jpg)
+}
+
+.greetings {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.calender {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.timeIs {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.toDo {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+
