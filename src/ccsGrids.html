@@ -4,54 +4,112 @@
     <link rel="stylesheet" href="cssGrids.css">
 </head>
 <body>
-<div class ="wrap">
-<form name ="cal">
-    <input type ="text" name="display">
-    <br><br>
-    <input type ="button" value ="9" onclick ="cal.display.value+='9'">
-    <input type ="button" value ="8" onclick ="cal.display.value+='8'">
-    <input type ="button" value ="7" onclick ="cal.display.value+='7'">
-    <input type ="button" value ="+" onclick ="cal.display.value+='+'">
-    <br><br>
-    <input type ="button" value ="6" onclick ="cal.display.value+='6'">
-    <input type ="button" value ="5" onclick ="cal.display.value+='5'">
-    <input type ="button" value ="4" onclick ="cal.display.value+='4'"> 
-    <input type ="button" value ="-" onclick ="cal.display.value+='-'">
-    <br><br>
-    <input type ="button" value ="3" onclick ="cal.display.value+='3'">
-    <input type ="button" value ="2" onclick ="cal.display.value+='2'">
-    <input type ="button" value ="1" onclick ="cal.display.value+='1'">
-    <input type ="button" value ="*" onclick ="cal.display.value+='*'">
-    <br><br>
-    <input type ="button" value ="0" onclick ="cal.display.value+='0'">
-    <input type ="button" value ="/" onclick ="cal.display.value+='/'">
-    <input type ="button" value ="%" onclick ="cal.display.value+='%'">
-    <input type ="button" value ="=" onclick ="cal.display.value =eval(cal.display.value)">
-    <br><br>
-    <input type ="button" value ="DEL" onclick ="cal.display.value= ''" id= "del">
-</form>
-</div>
+    <div class ="greetings">
+        <h1>Hello Marge,</h1>
+        <h3> Welcome to your Dashboard!</h3>
+    </div>
+    <div class ="wrap">
+        <form name ="cal">
+            <input type ="text" name="display">
+            <br><br>
+            <input type ="button" value ="9" onclick ="cal.display.value+='9'">
+            <input type ="button" value ="8" onclick ="cal.display.value+='8'">
+            <input type ="button" value ="7" onclick ="cal.display.value+='7'">
+            <input type ="button" value ="+" onclick ="cal.display.value+='+'">
+            <br><br>
+            <input type ="button" value ="6" onclick ="cal.display.value+='6'">
+            <input type ="button" value ="5" onclick ="cal.display.value+='5'">
+            <input type ="button" value ="4" onclick ="cal.display.value+='4'"> 
+            <input type ="button" value ="-" onclick ="cal.display.value+='-'">
+            <br><br>
+            <input type ="button" value ="3" onclick ="cal.display.value+='3'">
+            <input type ="button" value ="2" onclick ="cal.display.value+='2'">
+            <input type ="button" value ="1" onclick ="cal.display.value+='1'">
+            <input type ="button" value ="*" onclick ="cal.display.value+='*'">
+            <br><br>
+            <input type ="button" value ="0" onclick ="cal.display.value+='0'">
+            <input type ="button" value ="/" onclick ="cal.display.value+='/'">
+            <input type ="button" value ="%" onclick ="cal.display.value+='%'">
+            <input type ="button" value ="=" onclick ="cal.display.value =eval(cal.display.value)">
+            <br><br>
+            <input type ="button" value ="DEL" onclick ="cal.display.value= ''" id= "del">
+        </form>
+    </div>
 
-<div class ="greetings">
-    <h1>Hello Marge,</h1>
-    <h3> Welcome to your Dashboard!</h3>
-</div>
-<div class= "img">
-    <img src="marge1.jpg">
-</div>
+        <div class="toDo">
+        <ul>
+            <li>Work</li>
+            <li>School</li>
+            <li>Homework</li>
+            <li>Do dishes</li>
+        </ul>
 
-<div class ="calender">
+    </div>
 
 
-</div>
 
- <div class ="timeIs">  
-<a href="https://time.is/Austin" id="time_is_link" rel="nofollow" style="font-size:36px">Time in Austin:</a>
-<span id="Austin_z123" style="font-size:36px"></span>
-<script src="//widget.time.is/t.js"></script>
-<script>
-time_is_widget.init({Austin_z123:{time_format:"12hours:minutesAMPM"}});
-</script>
-</div>
-</body>
+    <!--<div class= "img">
+        <img src="marge1.jpg">
+    </div>-->
+
+     <div class="calendar">
+        <div class="image">
+            <h2>31, Friday</h2>
+            <h3>January | 2020</h3>
+        </div>
+        <div class="date">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>
+            <div class="number"></div>
+            <div class="number"></div>
+            <div class="number"></div>
+            <div class="number"></div>
+            <div class="number">1</div>
+            <div class="number">2</div>
+            <div class="number">3</div>
+            <div class="number">4</div>
+            <div class="number">5</div>
+            <div class="number">6</div>
+            <div class="number">7</div>
+            <div class="number">8</div>
+            <div class="number">9</div>
+            <div class="number">10</div>
+            <div class="number">11</div>
+            <div class="number">12</div>
+            <div class="number">13</div>
+            <div class="number">14</div>
+            <div class="number active">15</div>
+            <div class="number">16</div>
+            <div class="number">17</div>
+            <div class="number">18</div>
+            <div class="number">19</div>
+            <div class="number">20</div>
+            <div class="number">21</div>
+            <div class="number">22</div>
+            <div class="number">23</div>
+            <div class="number">24</div>
+            <div class="number">25</div>
+            <div class="number">26</div>
+            <div class="number">27</div>
+            <div class="number">28</div>
+            <div class="number">29</div>
+            <div class="number">30</div>
+            <div class="number">31</div>
+        </div>
+        </div>
+
+        <div class="timeIs">  
+        <a href="https://time.is/Austin" id="time_is_link" rel="nofollow" style="font-size:36px">Time in Austin:</a>
+        <span id="Austin_z123" style="font-size:36px"></span>
+        <script src="//widget.time.is/t.js"></script>
+        <script>
+        time_is_widget.init({Austin_z123:{time_format:"12hours:minutesAMPM"}});
+        </script>
+        </div>
+    </body>   
 </html>

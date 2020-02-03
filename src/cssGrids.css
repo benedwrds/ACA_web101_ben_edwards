@@ -1,8 +1,112 @@
-body{
+
+body {
+    margin: 25px;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". box2 ."
+        "box1 box4 box5"
+        "box6 . .";
 }
+
+.wrap {
+    grid-area: box1;
+    background-color: lightgrey;
+    padding: 15px;
+    height: 200px;
+    width: 130px;
+    
+
+    
+}
+
+.greetings {
+    grid-area: box2;
+}
+
+.toDo{
+    grid-area: box5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.calendar {
+    grid-area: box4;
+    width: 300px;
+    height: auto;
+    background: white;
+    box-sizing: border-box;
+}
+
+
+.calendar .image {
+    width: 100%; 
+    height: 200px;
+    background: url(marge1.jpg);
+    object-fit: fill;
+    padding: 20px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    text-align: right;
+    border: 1px solid 
+}
+
+
+.calendar .date {
+    grid-area: box4; 
+    padding: 20px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(25px, 1fr));
+    grid-gap: 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+.calendar .date div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    tex
+}
+
+.calendar .date div.day {
+   font-weight: 700; 
+}
+
+.calendar .date div.day:first-child,
+.calendar .date div.number:nth-child(7n + 1)
+{
+color: #ff685d;
+font-weight: 700;
+}
+
+.calendar .date div.number.active {
+background: lightgray;
+color: white;
+font-weight: 700;
+}
+
+
+.timeIs{
+    grid-area: box6;
+}
+
+
+
+/* /body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "box1 box2 box1"
+        "box4 box5 box6"
+        "box1 box8 box1";
+
+}
+justify-items (look up)
+align-items (look up)
+where inside the element the item will reside
 
 .wrap {
     grid-column: 1/2;
@@ -12,27 +116,29 @@ body{
 .img {
     grid-column: 2/3;
     grid-row: 1/2;
-    background-image:url(/marge1.jpg)
+    background-image:url("marge1.jpg");
 }
 
-.greetings {
-    grid-column: 2/3;
-    grid-row: 1/2;
+ .greetings { 
+    grid-area: box2;
+    background-image:url("marge1.jpg");
 }
 
-.calender {
-    grid-column: 2/3;
-    grid-row: 2/3;
+ .calender {
+    grid-area: box5;
+    
 }
 
 .timeIs {
-    grid-column: 2/3;
-    grid-row: 3/4;
+    grid-area: box8;
 }
 
 .toDo {
-    grid-column: 3/4;
-    grid-row: 2/3;
+    grid-area: box6;
 }
+
+
+ */ 
+
 
 
