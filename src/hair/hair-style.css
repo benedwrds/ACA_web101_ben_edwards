@@ -1,8 +1,22 @@
 nav {
  display: flex;
  background-color: rgb(227, 210, 250);
+ padding: 10px;
+ justify-content: space-between;
 }
 
-.link {
-
+ a {display: grid;
+ grid-template-columns: 25px 25px 25px 25px;
+  margin-top: 15px;
 }
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+h1 {
+margin-left: 25px;
+background-color: blueviolet;
+padding: 10px;
+color: whitesmoke}
