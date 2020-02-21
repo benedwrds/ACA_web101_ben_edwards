@@ -1,8 +1,9 @@
-@media (min-width: 576px){
-
+/*@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
 }
-
-@media (min-width: 768px){
+*/
+@media (min-width: 576px){
 body {
   font-family: 'Courier New', Courier, monospace;
   background-color: darkblue;
@@ -12,6 +13,9 @@ body {
   background-color: lightskyblue;
   width: auto;
   height: 20%;
+  /*animation-name: example;
+  animation-duration: 4s;
+*/
 }
 
 h1 {
@@ -36,9 +40,12 @@ span {
   margin-top: 5%;
 }
 
+/*.animatedLink a {
 
-
-
+  animation: ticker 6s;
+  animation-iteration-count: infinite;
+}
+*/
 nav li {
   list-style: none;
   
@@ -61,3 +68,18 @@ a {
   text-decoration: none;
 }
 }
+
+/*
+@keyframes ticker {
+  0% {
+    transform: translateX(150px)
+  }
+
+  50% {
+    transform: translateX(75vw)
+  }
+
+  100%{
+    transform: translateX(150px)
+  }
+*/
