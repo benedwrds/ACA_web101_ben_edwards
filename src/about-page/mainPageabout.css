@@ -1,0 +1,158 @@
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: darkblue;
+}
+
+  
+h1 {
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  color: darkblue ;
+}
+
+.video iframe {
+  position: absolute;
+  width: 55%;
+  height: 55%;
+}
+
+.video{
+  display: flex;
+  justify-content: center;
+}
+
+ .about {  
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+  
+@media (min-width: 576px){
+
+  .bart { 
+    display: none;
+  }
+  
+  h3 {
+    display:none;
+    text-align: center;
+    color: lightskyblue;
+
+  }
+
+  .video {
+    position: relative;
+    top: 5%;
+    padding-bottom: 56%;
+  }
+  
+nav {
+  animation-name: fadeIn;
+  animation-duration: 5s;
+
+}
+  /*Above is my Animation*/
+  nav li {
+    list-style: none;
+    
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -20%;
+    margin-left: 15%;
+    margin-right: 20%;
+  
+  }
+
+  a {
+    color: rgb(250, 66, 66);
+    font-weight: bold;
+    text-decoration: none;
+    animation-name: anchor;
+  }
+  
+  .tipTop{
+    background-color: lightskyblue;
+    width: auto;
+    height: 15%;
+}
+}
+
+@media (min-width: 768px){
+
+  .bart{
+    display:inline-block;
+    position: absolute;
+    left: -5%;
+    animation-name: slideInLeft;
+    animation-duration: 2s;
+  }
+
+
+
+  h3{
+    display: block;
+  }
+
+  .video {
+    top: -1%;}
+}
+
+@media (min-width: 900px){
+  
+  .bart {
+      top: 15%;
+  }
+}
+
+@media (min-width: 992px){
+
+h3 {
+  text-align: center;
+  color: lightskyblue;
+  
+}
+
+.bart {
+  display: inline-block;
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 15%;
+}
+
+.video {
+  position: relative;
+  padding-bottom: 58%;
+  
+}
+
+.video iframe {
+  position: absolute;
+  width: 55%;
+  height: 55%;
+}
+
+.video{
+  display: flex;
+  justify-content: center;
+}
+/*
+.example{
+  yadda yadda yadda
+  animation-name: newElement;
+  animation-duration:  3s;
+}
+
+@keyframes newElement {
+  from{ transform: translateX(0)}
+  to{ transform: translateX( AMmount ofpx) }
+}
+*/
+}

@@ -1,0 +1,59 @@
+@media (min-width: 576px){
+
+}
+
+@media (min-width: 768px){
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: darkblue;
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+
+
+button {
+  width: 20%;
+}
+
+
+h1 {
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  color: darkblue ;
+}
+
+
+nav ul  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+nav li {
+  list-style: none;
+  
+}
+a {
+  color: rgb(250, 66, 66);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tipTop{
+  background-color: lightskyblue;
+  width: auto;
+  height: 20%;
+}
+}
