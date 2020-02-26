@@ -1,0 +1,91 @@
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.box{
+height: 50px;
+width: 50px;
+/* transition: 3s; */
+transition-duration: 3s; 
+
+}
+
+.evenBox{
+  height:50px;
+  width: 50px;
+  /* transition:  1s; */
+  transition-duration: 1s; 
+}
+
+
+.box1 {
+  background-color: #ff6666;
+}
+
+.box2 {
+  background-color: #ffb266;
+}
+
+.box3 {
+  background-color: #ffff66 ;
+}
+
+.box4{
+  background-color: #b2ff66;
+}
+
+.box5 {
+  background-color: #66ff66 ;
+}
+
+.box6 {
+  background-color: #66ffb2;
+}
+
+.box7 {
+  background-color: #66FFFF;
+}
+
+.box8 {
+  background-color: #66b2ff;
+}
+
+.box9 {
+  background-color: #6666ff;
+}
+
+.box10 {
+  background-color: #b266ff
+}
+
+.box11 {
+  background-color: #ff66ff;
+}
+
+.box12 {
+  background-color: #ff66b2;
+}
+
+.main-container:hover .box:nth-child(odd){
+  height: 100px;
+  width: 100px;  
+  transform: rotate(360deg) translateX(100px);
+  transition: all ease-in-out 3s;
+  margin-left: 50%;
+  /*slides to right*/
+  /*have the squares slowly slide*/
+}
+
+.main-container:hover .evenBox:nth-child(even){
+  height: 25px;
+  width: 25px;
+  transform: rotate(-360deg) translateX(-100px);
+  transition: all ease-in-out 1s;
+  margin-right: 50%;
+
+
+  /*slide to left*/
+}
