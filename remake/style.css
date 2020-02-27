@@ -14,10 +14,8 @@ img{
   right: 35%;
   width: 40%;
   align: center;
-  
-
- 
 }
+
 nav {
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   font-family: 'fredericka the great',fantasy;
@@ -110,25 +108,74 @@ nav ul:active {
   height: auto;
 }
 
-.footerPhoto {
-  display: flex;
-  flex-direction: row;
-  
+/*.footerPhoto {
+  display: grid;
+  grid-template-columns: 320px 320px 320px;
+  grid-template-rows: 100px 100px 100px;
 }
 
 .tomPhoto {
-  position: absolute;
-  width: 800px;
-  height: 100px;
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .threePlate {
-  position: absolute;
-  width: 800px;
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.singlePlate {
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+*/
+.footerPhoto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.tomPhoto {
+  margin: 15px;
+  margin-left: 11%;
+  width: 320px;
   height: 100px;
+  border: 2px solid black;
+}
+
+.tomPhoto img {
+  width: 320px;
+  height: auto;
+}
+
+.threePlate {
+  margin: 15px;
+  width: 320px;
+  height: 100px;
+  border: 2px solid black;
+  
+}
+
+.threePlate img {
+  width: 320px;
+  height: auto;
 }
 .singlePlate { 
-  position: absolute;
-  width: 800px;
+  margin: 15px;
+  margin-right: 11%;
+  width: 320px;
   height: 100px;
+  border: 2px solid black;
+
 }
+
+.singlePlate img {
+  border: 2px solid black;
+  object-fit: cover;
+  width: 320px;
+  height: auto;
+
