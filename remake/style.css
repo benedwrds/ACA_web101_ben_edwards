@@ -25,41 +25,110 @@ nav {
   background-color: lightgray;
 }
 
+
+nav ul {
+  display: flex;
+  /* justify-content: space-between; */
+  margin: 2px;
+
+}
+
 nav li { 
+  border-right: 2px solid white;
+  width: 100%;
   list-style-type: none;
   /* display: grid; */
   /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
 /* grid-template-rows: auto; */
   display: flex;
   flex-direction: column;
-}
-/*
-.zero {
-  display: grid;
-  grid-column: 1/2;
-  grid-row: 1/2;
+  
 }
 
-.one {
-  display: grid;
-  grid-column: 2/3;
-  grid-row: 1/2;
+nav ul a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
-.two {
-  display: grid;
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
-*/
-
-nav ul:hover {
-  color:rgb(65, 63, 63);
+nav ul a:hover {
+  /* color:rgb(65, 63, 63); */
   background-color: rgb(65, 63, 63);
+  color: antiquewhite;
+  cursor: pointer;
+
 }
 
-nav ul:active: {
+nav ul:active {
   color: white;
   background-color: ;
 }
 
+.photoFlex {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ourFood {
+  margin: 15px;
+  border: 1px solid;
+  height: 550px;
+  width: 320px;
+}
+
+.ourFoodPhoto {
+  position: absolute;
+  width: 800px;
+  height: auto;
+}
+
+.updates {
+  margin: 15px;
+  border: 1px solid;
+  height: 550px;
+  width: 320px;
+}
+
+.updatePhoto {
+  position: absolute;
+  width: 800px;
+  height: auto;
+}
+
+.dinnerNight {
+  margin: 15px;
+  border: 1px solid;
+  height: 550px;
+  width:320px;
+}
+ 
+.dinnerNightPhoto {
+  position: absolute;
+  width: 800px;
+  height: auto;
+}
+
+.footerPhoto {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.tomPhoto {
+  position: absolute;
+  width: 800px;
+  height: 100px;
+}
+
+.threePlate {
+  position: absolute;
+  width: 800px;
+  height: 100px;
+}
+.singlePlate { 
+  position: absolute;
+  width: 800px;
+  height: 100px;
+}
