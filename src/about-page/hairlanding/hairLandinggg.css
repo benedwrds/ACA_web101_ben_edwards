@@ -1,0 +1,170 @@
+html {
+  font-family: cursive;
+}
+@media (min-width: 576px){
+  nav {
+    display: flex;
+    background-color: rgb(227, 210, 250);
+    padding:10px;
+    width: auto;
+  }
+
+  a{
+    grid-template-columns: 100px 100px 100px 100px;
+    margin-top: 15px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+  ul {
+    display: flex;
+    list-style-type: none;
+}
+  h1 {
+    margin-left: 25px;
+    background-color: blueviolet;
+    padding: 10px;
+    color: whitesmoke;
+    border-radius: 5px;
+  }
+  .allPhotos {
+  display:flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  
+  }
+
+  .marilynText {
+    visibility: hidden;
+  }
+
+  .elvisText {
+    visibility: hidden;
+  }
+
+  .aliText {
+    visibility: hidden;
+  }
+
+  img{ 
+    width: 80%;
+    height: auto;
+    margin-top: 10px;
+    
+  }
+
+  .beatle {
+    margin-left: 30%;
+    width: 80%;
+  }
+
+  .marilyn {
+    margin-left: 30%;
+    width: 80%;
+  }
+
+  .elvis {
+    margin-top: -50px;
+    margin-left: 30%;
+    width: 80%;
+
+  }
+
+  .ali {
+    margin-top: -25px;
+    margin-left: 30%;
+    width: 80%;
+  
+  }
+
+  footer { 
+    position: relative;
+    bottom: 2px; 
+    border: 45px solid  rgb(227, 210, 250);
+  } 
+  
+}
+
+
+/* MEDIA QUERY */
+
+@media(min-width: 992px)
+{
+
+  a{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 60px; 
+  }
+
+  img {
+    display: block;
+    width: 75%;
+    margin-left: 12%;
+    margin-right: 12;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+
+  .photos {
+    margin-bottom: 450px;
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 35px;
+    width: 100%;
+    position: relative;
+    top: 25px;
+}
+
+div .beatle {
+  display: block;
+  width: 100%;
+  position: relative;
+  right: 15%;
+}
+
+div .marilyn{
+  width: 110%;
+  height: auto;
+  position: relative;
+  right: 13%;
+  top: -20%;
+  
+
+ }
+ 
+/* div .marilynText{
+  position: relative;
+  left: 45px;
+}
+*/
+div .elvis {
+
+  width: 200%;
+  position: relative;
+  right: 151%;
+  top: 100%;
+}
+
+div .ali {
+  width: 100%;
+  position: relative;
+  left: 107%;
+  top: -5%;
+
+ }
+ 
+/*div .aliText {
+  position: relative;
+  left: 30px;
+}
+*/
+
+footer { 
+  position: relative;
+  bottom: 2px; 
+  border: 45px solid  rgb(227, 210, 250);
+
+} 
+}
